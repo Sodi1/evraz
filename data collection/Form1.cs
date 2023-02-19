@@ -413,7 +413,6 @@ namespace newbosch
 
     private void btn_TestJSONSend_Click(object sender, EventArgs e)
     {
-      //SendJsonToServer();
       testKafka();
     }
 

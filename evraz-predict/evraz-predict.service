@@ -1,0 +1,12 @@
+[Unit]
+Description=EVRAZ predict service
+
+[Service]
+WorkingDirectory=/home/serveriot/evraz-predict/evraz-predict-main/
+ExecStart=/home/serveriot/evraz-predict/evraz-predict-main/env/bin/python3 -m uvicorn main:app --port 9900 --reload
+Type=simple
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

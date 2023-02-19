@@ -52,18 +52,6 @@
       this.label8 = new System.Windows.Forms.Label();
       this.lbl_Phase_U = new System.Windows.Forms.Label();
       this.tabPage2 = new System.Windows.Forms.TabPage();
-      this.rBtnServ = new System.Windows.Forms.RadioButton();
-      this.rBtn_FTP = new System.Windows.Forms.RadioButton();
-      this.chkBox_Alarm = new System.Windows.Forms.CheckBox();
-      this.label14 = new System.Windows.Forms.Label();
-      this.label13 = new System.Windows.Forms.Label();
-      this.label12 = new System.Windows.Forms.Label();
-      this.txtBox_Server = new System.Windows.Forms.TextBox();
-      this.txtBox_Pwd = new System.Windows.Forms.TextBox();
-      this.txtBox_Usr = new System.Windows.Forms.TextBox();
-      this.btn_SendFTP = new System.Windows.Forms.Button();
-      this.lblStatus = new System.Windows.Forms.Label();
-      this.btn_SendFile = new System.Windows.Forms.Button();
       this.btn_TestJSONSend = new System.Windows.Forms.Button();
       this.label7 = new System.Windows.Forms.Label();
       this.numUp_upd_serv = new System.Windows.Forms.NumericUpDown();
@@ -91,17 +79,19 @@
       // 
       // txtBox_ip
       // 
-      this.txtBox_ip.Location = new System.Drawing.Point(12, 22);
+      this.txtBox_ip.Location = new System.Drawing.Point(16, 27);
+      this.txtBox_ip.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.txtBox_ip.Name = "txtBox_ip";
-      this.txtBox_ip.Size = new System.Drawing.Size(107, 20);
+      this.txtBox_ip.Size = new System.Drawing.Size(141, 22);
       this.txtBox_ip.TabIndex = 0;
       this.txtBox_ip.Text = "192.168.129.17";
       // 
       // btn_ConnectBosch
       // 
-      this.btn_ConnectBosch.Location = new System.Drawing.Point(33, 63);
+      this.btn_ConnectBosch.Location = new System.Drawing.Point(44, 78);
+      this.btn_ConnectBosch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.btn_ConnectBosch.Name = "btn_ConnectBosch";
-      this.btn_ConnectBosch.Size = new System.Drawing.Size(75, 23);
+      this.btn_ConnectBosch.Size = new System.Drawing.Size(100, 28);
       this.btn_ConnectBosch.TabIndex = 1;
       this.btn_ConnectBosch.Text = "Connect";
       this.btn_ConnectBosch.UseVisualStyleBackColor = true;
@@ -110,9 +100,10 @@
       // btn_DisConnBosch
       // 
       this.btn_DisConnBosch.Enabled = false;
-      this.btn_DisConnBosch.Location = new System.Drawing.Point(33, 92);
+      this.btn_DisConnBosch.Location = new System.Drawing.Point(44, 113);
+      this.btn_DisConnBosch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.btn_DisConnBosch.Name = "btn_DisConnBosch";
-      this.btn_DisConnBosch.Size = new System.Drawing.Size(75, 23);
+      this.btn_DisConnBosch.Size = new System.Drawing.Size(100, 28);
       this.btn_DisConnBosch.TabIndex = 2;
       this.btn_DisConnBosch.Text = "Disonnect";
       this.btn_DisConnBosch.UseVisualStyleBackColor = true;
@@ -120,7 +111,8 @@
       // 
       // nud_AdrMotor
       // 
-      this.nud_AdrMotor.Location = new System.Drawing.Point(152, 22);
+      this.nud_AdrMotor.Location = new System.Drawing.Point(203, 27);
+      this.nud_AdrMotor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.nud_AdrMotor.Maximum = new decimal(new int[] {
             15,
             0,
@@ -132,7 +124,7 @@
             0,
             0});
       this.nud_AdrMotor.Name = "nud_AdrMotor";
-      this.nud_AdrMotor.Size = new System.Drawing.Size(107, 20);
+      this.nud_AdrMotor.Size = new System.Drawing.Size(143, 22);
       this.nud_AdrMotor.TabIndex = 3;
       this.nud_AdrMotor.Value = new decimal(new int[] {
             3,
@@ -143,72 +135,80 @@
       // label1
       // 
       this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(168, 6);
+      this.label1.Location = new System.Drawing.Point(224, 7);
+      this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(75, 13);
+      this.label1.Size = new System.Drawing.Size(95, 16);
       this.label1.TabIndex = 4;
       this.label1.Text = "Motor Address";
       // 
       // label2
       // 
       this.label2.AutoSize = true;
-      this.label2.Location = new System.Drawing.Point(30, 6);
+      this.label2.Location = new System.Drawing.Point(40, 7);
+      this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(46, 13);
+      this.label2.Size = new System.Drawing.Size(55, 16);
       this.label2.TabIndex = 5;
       this.label2.Text = "Motor Ip";
       // 
       // label3
       // 
       this.label3.AutoSize = true;
-      this.label3.Location = new System.Drawing.Point(30, 135);
+      this.label3.Location = new System.Drawing.Point(40, 166);
+      this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(84, 13);
+      this.label3.Size = new System.Drawing.Size(101, 16);
       this.label3.TabIndex = 6;
       this.label3.Text = "Motor Current, A";
       // 
       // label4
       // 
       this.label4.AutoSize = true;
-      this.label4.Location = new System.Drawing.Point(30, 163);
+      this.label4.Location = new System.Drawing.Point(40, 201);
+      this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label4.Name = "label4";
-      this.label4.Size = new System.Drawing.Size(93, 13);
+      this.label4.Size = new System.Drawing.Size(115, 16);
       this.label4.TabIndex = 7;
       this.label4.Text = "Motor Torque, Nm";
       // 
       // label5
       // 
       this.label5.AutoSize = true;
-      this.label5.Location = new System.Drawing.Point(31, 194);
+      this.label5.Location = new System.Drawing.Point(41, 239);
+      this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label5.Name = "label5";
-      this.label5.Size = new System.Drawing.Size(91, 13);
+      this.label5.Size = new System.Drawing.Size(114, 16);
       this.label5.TabIndex = 8;
       this.label5.Text = "Motor Speed, rpm";
       // 
       // lbl_actOutCur
       // 
       this.lbl_actOutCur.AutoSize = true;
-      this.lbl_actOutCur.Location = new System.Drawing.Point(156, 135);
+      this.lbl_actOutCur.Location = new System.Drawing.Point(208, 166);
+      this.lbl_actOutCur.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.lbl_actOutCur.Name = "lbl_actOutCur";
-      this.lbl_actOutCur.Size = new System.Drawing.Size(13, 13);
+      this.lbl_actOutCur.Size = new System.Drawing.Size(14, 16);
       this.lbl_actOutCur.TabIndex = 9;
       this.lbl_actOutCur.Text = "0";
       // 
       // lblTor
       // 
       this.lblTor.AutoSize = true;
-      this.lblTor.Location = new System.Drawing.Point(156, 163);
+      this.lblTor.Location = new System.Drawing.Point(208, 201);
+      this.lblTor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.lblTor.Name = "lblTor";
-      this.lblTor.Size = new System.Drawing.Size(13, 13);
+      this.lblTor.Size = new System.Drawing.Size(14, 16);
       this.lblTor.TabIndex = 10;
       this.lblTor.Text = "0";
       // 
       // lblSpeed
       // 
       this.lblSpeed.AutoSize = true;
-      this.lblSpeed.Location = new System.Drawing.Point(156, 194);
+      this.lblSpeed.Location = new System.Drawing.Point(208, 239);
+      this.lblSpeed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.lblSpeed.Name = "lblSpeed";
-      this.lblSpeed.Size = new System.Drawing.Size(13, 13);
+      this.lblSpeed.Size = new System.Drawing.Size(14, 16);
       this.lblSpeed.TabIndex = 11;
       this.lblSpeed.Text = "0";
       // 
@@ -219,9 +219,10 @@
       // 
       // btnClearError
       // 
-      this.btnClearError.Location = new System.Drawing.Point(152, 63);
+      this.btnClearError.Location = new System.Drawing.Point(203, 78);
+      this.btnClearError.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.btnClearError.Name = "btnClearError";
-      this.btnClearError.Size = new System.Drawing.Size(75, 23);
+      this.btnClearError.Size = new System.Drawing.Size(100, 28);
       this.btnClearError.TabIndex = 12;
       this.btnClearError.Text = "ClearError";
       this.btnClearError.UseVisualStyleBackColor = true;
@@ -232,10 +233,11 @@
       this.tabControl1.Controls.Add(this.tabPage1);
       this.tabControl1.Controls.Add(this.tabPage2);
       this.tabControl1.Controls.Add(this.tabPage3);
-      this.tabControl1.Location = new System.Drawing.Point(-4, 1);
+      this.tabControl1.Location = new System.Drawing.Point(-5, 1);
+      this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.tabControl1.Name = "tabControl1";
       this.tabControl1.SelectedIndex = 0;
-      this.tabControl1.Size = new System.Drawing.Size(288, 324);
+      this.tabControl1.Size = new System.Drawing.Size(384, 399);
       this.tabControl1.TabIndex = 13;
       // 
       // tabPage1
@@ -260,203 +262,97 @@
       this.tabPage1.Controls.Add(this.btn_ConnectBosch);
       this.tabPage1.Controls.Add(this.label3);
       this.tabPage1.Controls.Add(this.btn_DisConnBosch);
-      this.tabPage1.Location = new System.Drawing.Point(4, 22);
+      this.tabPage1.Location = new System.Drawing.Point(4, 25);
+      this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.tabPage1.Name = "tabPage1";
-      this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-      this.tabPage1.Size = new System.Drawing.Size(280, 298);
+      this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.tabPage1.Size = new System.Drawing.Size(376, 370);
       this.tabPage1.TabIndex = 0;
       this.tabPage1.Text = "Motor";
       // 
       // lbl_Temperature
       // 
       this.lbl_Temperature.AutoSize = true;
-      this.lbl_Temperature.Location = new System.Drawing.Point(156, 270);
+      this.lbl_Temperature.Location = new System.Drawing.Point(208, 332);
+      this.lbl_Temperature.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.lbl_Temperature.Name = "lbl_Temperature";
-      this.lbl_Temperature.Size = new System.Drawing.Size(13, 13);
+      this.lbl_Temperature.Size = new System.Drawing.Size(14, 16);
       this.lbl_Temperature.TabIndex = 17;
       this.lbl_Temperature.Text = "0";
       // 
       // label15
       // 
       this.label15.AutoSize = true;
-      this.label15.Location = new System.Drawing.Point(31, 270);
+      this.label15.Location = new System.Drawing.Point(41, 332);
+      this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label15.Name = "label15";
-      this.label15.Size = new System.Drawing.Size(44, 13);
+      this.label15.Size = new System.Drawing.Size(53, 16);
       this.label15.TabIndex = 16;
       this.label15.Text = "Motor T";
       // 
       // lbl_Phase_V
       // 
       this.lbl_Phase_V.AutoSize = true;
-      this.lbl_Phase_V.Location = new System.Drawing.Point(156, 243);
+      this.lbl_Phase_V.Location = new System.Drawing.Point(208, 299);
+      this.lbl_Phase_V.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.lbl_Phase_V.Name = "lbl_Phase_V";
-      this.lbl_Phase_V.Size = new System.Drawing.Size(13, 13);
+      this.lbl_Phase_V.Size = new System.Drawing.Size(14, 16);
       this.lbl_Phase_V.TabIndex = 15;
       this.lbl_Phase_V.Text = "0";
       // 
       // label9
       // 
       this.label9.AutoSize = true;
-      this.label9.Location = new System.Drawing.Point(31, 244);
+      this.label9.Location = new System.Drawing.Point(41, 300);
+      this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label9.Name = "label9";
-      this.label9.Size = new System.Drawing.Size(76, 13);
+      this.label9.Size = new System.Drawing.Size(94, 16);
       this.label9.TabIndex = 14;
       this.label9.Text = "Motor phase V";
       // 
       // label8
       // 
       this.label8.AutoSize = true;
-      this.label8.Location = new System.Drawing.Point(31, 220);
+      this.label8.Location = new System.Drawing.Point(41, 271);
+      this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label8.Name = "label8";
-      this.label8.Size = new System.Drawing.Size(77, 13);
+      this.label8.Size = new System.Drawing.Size(95, 16);
       this.label8.TabIndex = 13;
       this.label8.Text = "Motor phase U";
       // 
       // lbl_Phase_U
       // 
       this.lbl_Phase_U.AutoSize = true;
-      this.lbl_Phase_U.Location = new System.Drawing.Point(156, 220);
+      this.lbl_Phase_U.Location = new System.Drawing.Point(208, 271);
+      this.lbl_Phase_U.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.lbl_Phase_U.Name = "lbl_Phase_U";
-      this.lbl_Phase_U.Size = new System.Drawing.Size(13, 13);
+      this.lbl_Phase_U.Size = new System.Drawing.Size(14, 16);
       this.lbl_Phase_U.TabIndex = 11;
       this.lbl_Phase_U.Text = "0";
       // 
       // tabPage2
       // 
       this.tabPage2.BackColor = System.Drawing.Color.LightGray;
-      this.tabPage2.Controls.Add(this.rBtnServ);
-      this.tabPage2.Controls.Add(this.rBtn_FTP);
-      this.tabPage2.Controls.Add(this.chkBox_Alarm);
-      this.tabPage2.Controls.Add(this.label14);
-      this.tabPage2.Controls.Add(this.label13);
-      this.tabPage2.Controls.Add(this.label12);
-      this.tabPage2.Controls.Add(this.txtBox_Server);
-      this.tabPage2.Controls.Add(this.txtBox_Pwd);
-      this.tabPage2.Controls.Add(this.txtBox_Usr);
-      this.tabPage2.Controls.Add(this.btn_SendFTP);
-      this.tabPage2.Controls.Add(this.lblStatus);
-      this.tabPage2.Controls.Add(this.btn_SendFile);
       this.tabPage2.Controls.Add(this.btn_TestJSONSend);
       this.tabPage2.Controls.Add(this.label7);
       this.tabPage2.Controls.Add(this.numUp_upd_serv);
       this.tabPage2.Controls.Add(this.chkBox_Server_Conn);
       this.tabPage2.Controls.Add(this.label6);
       this.tabPage2.Controls.Add(this.txtBox_ip_server);
-      this.tabPage2.Location = new System.Drawing.Point(4, 22);
+      this.tabPage2.Location = new System.Drawing.Point(4, 25);
+      this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.tabPage2.Name = "tabPage2";
-      this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-      this.tabPage2.Size = new System.Drawing.Size(280, 298);
+      this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+      this.tabPage2.Size = new System.Drawing.Size(376, 370);
       this.tabPage2.TabIndex = 1;
       this.tabPage2.Text = "Server";
       // 
-      // rBtnServ
-      // 
-      this.rBtnServ.AutoSize = true;
-      this.rBtnServ.Location = new System.Drawing.Point(221, 275);
-      this.rBtnServ.Name = "rBtnServ";
-      this.rBtnServ.Size = new System.Drawing.Size(56, 17);
-      this.rBtnServ.TabIndex = 17;
-      this.rBtnServ.TabStop = true;
-      this.rBtnServ.Text = "Server";
-      this.rBtnServ.UseVisualStyleBackColor = true;
-      this.rBtnServ.Visible = false;
-      // 
-      // rBtn_FTP
-      // 
-      this.rBtn_FTP.AutoSize = true;
-      this.rBtn_FTP.Location = new System.Drawing.Point(221, 252);
-      this.rBtn_FTP.Name = "rBtn_FTP";
-      this.rBtn_FTP.Size = new System.Drawing.Size(45, 17);
-      this.rBtn_FTP.TabIndex = 16;
-      this.rBtn_FTP.TabStop = true;
-      this.rBtn_FTP.Text = "FTP";
-      this.rBtn_FTP.UseVisualStyleBackColor = true;
-      this.rBtn_FTP.Visible = false;
-      // 
-      // chkBox_Alarm
-      // 
-      this.chkBox_Alarm.AutoSize = true;
-      this.chkBox_Alarm.Location = new System.Drawing.Point(221, 229);
-      this.chkBox_Alarm.Name = "chkBox_Alarm";
-      this.chkBox_Alarm.Size = new System.Drawing.Size(59, 17);
-      this.chkBox_Alarm.TabIndex = 15;
-      this.chkBox_Alarm.Text = "isAlarm";
-      this.chkBox_Alarm.UseVisualStyleBackColor = true;
-      this.chkBox_Alarm.Visible = false;
-      // 
-      // label14
-      // 
-      this.label14.AutoSize = true;
-      this.label14.Location = new System.Drawing.Point(251, 118);
-      this.label14.Name = "label14";
-      this.label14.Size = new System.Drawing.Size(53, 13);
-      this.label14.TabIndex = 14;
-      this.label14.Text = "FtpServer";
-      this.label14.Visible = false;
-      // 
-      // label13
-      // 
-      this.label13.AutoSize = true;
-      this.label13.Location = new System.Drawing.Point(251, 79);
-      this.label13.Name = "label13";
-      this.label13.Size = new System.Drawing.Size(53, 13);
-      this.label13.TabIndex = 13;
-      this.label13.Text = "Password";
-      this.label13.Visible = false;
-      // 
-      // label12
-      // 
-      this.label12.AutoSize = true;
-      this.label12.Location = new System.Drawing.Point(251, 21);
-      this.label12.Name = "label12";
-      this.label12.Size = new System.Drawing.Size(29, 13);
-      this.label12.TabIndex = 12;
-      this.label12.Text = "User";
-      this.label12.Visible = false;
-      // 
-      // txtBox_Server
-      // 
-      this.txtBox_Server.Location = new System.Drawing.Point(259, 133);
-      this.txtBox_Server.Name = "txtBox_Server";
-      this.txtBox_Server.Size = new System.Drawing.Size(100, 20);
-      this.txtBox_Server.TabIndex = 11;
-      this.txtBox_Server.Text = "ftp://80.211.23.111";
-      this.txtBox_Server.Visible = false;
-      // 
-      // txtBox_Pwd
-      // 
-      this.txtBox_Pwd.Location = new System.Drawing.Point(259, 95);
-      this.txtBox_Pwd.Name = "txtBox_Pwd";
-      this.txtBox_Pwd.PasswordChar = '*';
-      this.txtBox_Pwd.Size = new System.Drawing.Size(100, 20);
-      this.txtBox_Pwd.TabIndex = 10;
-      this.txtBox_Pwd.Text = "12345";
-      this.txtBox_Pwd.Visible = false;
-      // 
-      // txtBox_Usr
-      // 
-      this.txtBox_Usr.Location = new System.Drawing.Point(259, 37);
-      this.txtBox_Usr.Name = "txtBox_Usr";
-      this.txtBox_Usr.Size = new System.Drawing.Size(100, 20);
-      this.txtBox_Usr.TabIndex = 9;
-      this.txtBox_Usr.Text = "newftp";
-      this.txtBox_Usr.Visible = false;
-      // 
-      // lblStatus
-      // 
-      this.lblStatus.AutoSize = true;
-      this.lblStatus.Location = new System.Drawing.Point(251, 197);
-      this.lblStatus.Name = "lblStatus";
-      this.lblStatus.Size = new System.Drawing.Size(48, 13);
-      this.lblStatus.TabIndex = 7;
-      this.lblStatus.Text = "Load 0%";
-      this.lblStatus.Visible = false;
-      // 
       // btn_TestJSONSend
       // 
-      this.btn_TestJSONSend.Location = new System.Drawing.Point(89, 162);
+      this.btn_TestJSONSend.Location = new System.Drawing.Point(119, 199);
+      this.btn_TestJSONSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.btn_TestJSONSend.Name = "btn_TestJSONSend";
-      this.btn_TestJSONSend.Size = new System.Drawing.Size(75, 23);
+      this.btn_TestJSONSend.Size = new System.Drawing.Size(100, 28);
       this.btn_TestJSONSend.TabIndex = 5;
       this.btn_TestJSONSend.Text = "TestSend";
       this.btn_TestJSONSend.UseVisualStyleBackColor = true;
@@ -465,15 +361,17 @@
       // label7
       // 
       this.label7.AutoSize = true;
-      this.label7.Location = new System.Drawing.Point(98, 68);
+      this.label7.Location = new System.Drawing.Point(131, 84);
+      this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label7.Name = "label7";
-      this.label7.Size = new System.Drawing.Size(68, 13);
+      this.label7.Size = new System.Drawing.Size(86, 16);
       this.label7.TabIndex = 4;
       this.label7.Text = "Time Update";
       // 
       // numUp_upd_serv
       // 
-      this.numUp_upd_serv.Location = new System.Drawing.Point(71, 84);
+      this.numUp_upd_serv.Location = new System.Drawing.Point(95, 103);
+      this.numUp_upd_serv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.numUp_upd_serv.Maximum = new decimal(new int[] {
             3000,
             0,
@@ -485,7 +383,7 @@
             0,
             0});
       this.numUp_upd_serv.Name = "numUp_upd_serv";
-      this.numUp_upd_serv.Size = new System.Drawing.Size(115, 20);
+      this.numUp_upd_serv.Size = new System.Drawing.Size(153, 22);
       this.numUp_upd_serv.TabIndex = 3;
       this.numUp_upd_serv.Value = new decimal(new int[] {
             500,
@@ -496,9 +394,10 @@
       // chkBox_Server_Conn
       // 
       this.chkBox_Server_Conn.AutoSize = true;
-      this.chkBox_Server_Conn.Location = new System.Drawing.Point(89, 139);
+      this.chkBox_Server_Conn.Location = new System.Drawing.Point(119, 171);
+      this.chkBox_Server_Conn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.chkBox_Server_Conn.Name = "chkBox_Server_Conn";
-      this.chkBox_Server_Conn.Size = new System.Drawing.Size(77, 17);
+      this.chkBox_Server_Conn.Size = new System.Drawing.Size(93, 20);
       this.chkBox_Server_Conn.TabIndex = 2;
       this.chkBox_Server_Conn.Text = "Send Data";
       this.chkBox_Server_Conn.UseVisualStyleBackColor = true;
@@ -507,17 +406,19 @@
       // label6
       // 
       this.label6.AutoSize = true;
-      this.label6.Location = new System.Drawing.Point(107, 21);
+      this.label6.Location = new System.Drawing.Point(143, 26);
+      this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label6.Name = "label6";
-      this.label6.Size = new System.Drawing.Size(51, 13);
+      this.label6.Size = new System.Drawing.Size(62, 16);
       this.label6.TabIndex = 1;
       this.label6.Text = "Server IP";
       // 
       // txtBox_ip_server
       // 
-      this.txtBox_ip_server.Location = new System.Drawing.Point(71, 37);
+      this.txtBox_ip_server.Location = new System.Drawing.Point(95, 46);
+      this.txtBox_ip_server.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.txtBox_ip_server.Name = "txtBox_ip_server";
-      this.txtBox_ip_server.Size = new System.Drawing.Size(115, 20);
+      this.txtBox_ip_server.Size = new System.Drawing.Size(152, 22);
       this.txtBox_ip_server.TabIndex = 0;
       this.txtBox_ip_server.Text = "https://kovalev.team";
       // 
@@ -532,17 +433,19 @@
       this.tabPage3.Controls.Add(this.btn_Recive_MQTT);
       this.tabPage3.Controls.Add(this.btn_DisConn_MQTT);
       this.tabPage3.Controls.Add(this.bnt_Conn_MQTT);
-      this.tabPage3.Location = new System.Drawing.Point(4, 22);
+      this.tabPage3.Location = new System.Drawing.Point(4, 25);
+      this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.tabPage3.Name = "tabPage3";
-      this.tabPage3.Size = new System.Drawing.Size(280, 298);
+      this.tabPage3.Size = new System.Drawing.Size(376, 370);
       this.tabPage3.TabIndex = 2;
       this.tabPage3.Text = "MQTT";
       // 
       // btn_Unsubscribe
       // 
-      this.btn_Unsubscribe.Location = new System.Drawing.Point(140, 107);
+      this.btn_Unsubscribe.Location = new System.Drawing.Point(187, 132);
+      this.btn_Unsubscribe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.btn_Unsubscribe.Name = "btn_Unsubscribe";
-      this.btn_Unsubscribe.Size = new System.Drawing.Size(75, 23);
+      this.btn_Unsubscribe.Size = new System.Drawing.Size(100, 28);
       this.btn_Unsubscribe.TabIndex = 9;
       this.btn_Unsubscribe.Text = "Unsubscribe";
       this.btn_Unsubscribe.UseVisualStyleBackColor = true;
@@ -550,44 +453,49 @@
       // label11
       // 
       this.label11.AutoSize = true;
-      this.label11.Location = new System.Drawing.Point(37, 232);
+      this.label11.Location = new System.Drawing.Point(49, 286);
+      this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label11.Name = "label11";
-      this.label11.Size = new System.Drawing.Size(35, 13);
+      this.label11.Size = new System.Drawing.Size(43, 16);
       this.label11.TabIndex = 8;
       this.label11.Text = "Hump";
       // 
       // label10
       // 
       this.label10.AutoSize = true;
-      this.label10.Location = new System.Drawing.Point(37, 205);
+      this.label10.Location = new System.Drawing.Point(49, 252);
+      this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label10.Name = "label10";
-      this.label10.Size = new System.Drawing.Size(34, 13);
+      this.label10.Size = new System.Drawing.Size(43, 16);
       this.label10.TabIndex = 7;
       this.label10.Text = "Temp";
       // 
       // lbl_MQTT_Hump
       // 
       this.lbl_MQTT_Hump.AutoSize = true;
-      this.lbl_MQTT_Hump.Location = new System.Drawing.Point(158, 232);
+      this.lbl_MQTT_Hump.Location = new System.Drawing.Point(211, 286);
+      this.lbl_MQTT_Hump.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.lbl_MQTT_Hump.Name = "lbl_MQTT_Hump";
-      this.lbl_MQTT_Hump.Size = new System.Drawing.Size(13, 13);
+      this.lbl_MQTT_Hump.Size = new System.Drawing.Size(14, 16);
       this.lbl_MQTT_Hump.TabIndex = 6;
       this.lbl_MQTT_Hump.Text = "0";
       // 
       // lbl_MQTT_Temp
       // 
       this.lbl_MQTT_Temp.AutoSize = true;
-      this.lbl_MQTT_Temp.Location = new System.Drawing.Point(158, 205);
+      this.lbl_MQTT_Temp.Location = new System.Drawing.Point(211, 252);
+      this.lbl_MQTT_Temp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.lbl_MQTT_Temp.Name = "lbl_MQTT_Temp";
-      this.lbl_MQTT_Temp.Size = new System.Drawing.Size(13, 13);
+      this.lbl_MQTT_Temp.Size = new System.Drawing.Size(14, 16);
       this.lbl_MQTT_Temp.TabIndex = 5;
       this.lbl_MQTT_Temp.Text = "0";
       // 
       // btn_Recive_MQTT
       // 
-      this.btn_Recive_MQTT.Location = new System.Drawing.Point(40, 107);
+      this.btn_Recive_MQTT.Location = new System.Drawing.Point(53, 132);
+      this.btn_Recive_MQTT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.btn_Recive_MQTT.Name = "btn_Recive_MQTT";
-      this.btn_Recive_MQTT.Size = new System.Drawing.Size(75, 23);
+      this.btn_Recive_MQTT.Size = new System.Drawing.Size(100, 28);
       this.btn_Recive_MQTT.TabIndex = 4;
       this.btn_Recive_MQTT.Text = "Subscribe";
       this.btn_Recive_MQTT.UseVisualStyleBackColor = true;
@@ -596,9 +504,10 @@
       // btn_DisConn_MQTT
       // 
       this.btn_DisConn_MQTT.Enabled = false;
-      this.btn_DisConn_MQTT.Location = new System.Drawing.Point(140, 55);
+      this.btn_DisConn_MQTT.Location = new System.Drawing.Point(187, 68);
+      this.btn_DisConn_MQTT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.btn_DisConn_MQTT.Name = "btn_DisConn_MQTT";
-      this.btn_DisConn_MQTT.Size = new System.Drawing.Size(75, 23);
+      this.btn_DisConn_MQTT.Size = new System.Drawing.Size(100, 28);
       this.btn_DisConn_MQTT.TabIndex = 3;
       this.btn_DisConn_MQTT.Text = "Disonnect";
       this.btn_DisConn_MQTT.UseVisualStyleBackColor = true;
@@ -606,9 +515,10 @@
       // 
       // bnt_Conn_MQTT
       // 
-      this.bnt_Conn_MQTT.Location = new System.Drawing.Point(40, 55);
+      this.bnt_Conn_MQTT.Location = new System.Drawing.Point(53, 68);
+      this.bnt_Conn_MQTT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.bnt_Conn_MQTT.Name = "bnt_Conn_MQTT";
-      this.bnt_Conn_MQTT.Size = new System.Drawing.Size(75, 23);
+      this.bnt_Conn_MQTT.Size = new System.Drawing.Size(100, 28);
       this.bnt_Conn_MQTT.TabIndex = 2;
       this.bnt_Conn_MQTT.Text = "Connect";
       this.bnt_Conn_MQTT.UseVisualStyleBackColor = true;
@@ -621,10 +531,11 @@
       // 
       // Form1
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(284, 319);
+      this.ClientSize = new System.Drawing.Size(379, 393);
       this.Controls.Add(this.tabControl1);
+      this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
       this.Name = "Form1";
       this.Text = "EVRAZ";
       this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
@@ -680,19 +591,7 @@
     private System.Windows.Forms.Label label11;
     private System.Windows.Forms.Label label10;
     private System.Windows.Forms.Label lbl_MQTT_Hump;
-    private System.Windows.Forms.Button btn_SendFile;
     private System.ComponentModel.BackgroundWorker backgroundWorker;
-    private System.Windows.Forms.Label lblStatus;
-    private System.Windows.Forms.Button btn_SendFTP;
-    private System.Windows.Forms.Label label14;
-    private System.Windows.Forms.Label label13;
-    private System.Windows.Forms.Label label12;
-    private System.Windows.Forms.TextBox txtBox_Server;
-    private System.Windows.Forms.TextBox txtBox_Pwd;
-    private System.Windows.Forms.TextBox txtBox_Usr;
-    private System.Windows.Forms.CheckBox chkBox_Alarm;
-    private System.Windows.Forms.RadioButton rBtnServ;
-    private System.Windows.Forms.RadioButton rBtn_FTP;
     private System.Windows.Forms.Label lbl_Temperature;
     private System.Windows.Forms.Label label15;
   }
