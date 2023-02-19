@@ -1,0 +1,6 @@
+set :domain, '82.179.84.88'
+set :deploy_to, '/home/serveriot/evraz-api/'
+set :user, 'serveriot'
+set :environment, 'production'
+set :branch, 'master'
+set :rails_env, 'production'

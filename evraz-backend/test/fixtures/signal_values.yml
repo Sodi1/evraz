@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  signal_batch: one
+  signal_kind: one
+  value: 1.5
+
+two:
+  signal_batch: two
+  signal_kind: two
+  value: 1.5

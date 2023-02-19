@@ -1,0 +1,15 @@
+[Unit]
+Description=Puma HTTP Server evraz data consumer
+After=network.target
+[Service]
+Type=simple
+WorkingDirectory=/home/serveriot/evraz-api/current/
+Environment=RAILS_ENV=production
+ExecStart=/home/serveriot/.rbenv/shims/bundle exec racecar  EvrazDataConsumer
+Restart=always
+RestartSec=5
+PIDFile=/home/serveriot/evraz-api/shared/tmp/pids/evraz_data_consumer.pid
+
+[Install]
+WantedBy=default.target
+

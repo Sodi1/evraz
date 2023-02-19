@@ -1,0 +1,2 @@
+class EvrazKafkaDatum < ApplicationRecord
+end

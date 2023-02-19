@@ -1,0 +1,14 @@
+[Unit]
+Description=Puma HTTP Server evraz_api
+After=network.target
+[Service]
+Type=simple
+WorkingDirectory=/home/serveriot/evraz-api/current/
+Environment=RAILS_ENV=production PORT=9099
+ExecStart=/home/serveriot/.rbenv/shims/bundle exec puma
+Restart=always
+RestartSec=5
+PIDFile=/home/serveriot/evraz-api/shared/tmp/pids/puma.pid
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,2 @@
+class ControlledParameter < ApplicationRecord
+end

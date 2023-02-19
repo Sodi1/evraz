@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  code: MyString
+  kafka_code: MyString
+  type_of_signal: MyString
+  device_kind: one
+  controlled_parameter: one
+  value_kind: one
+
+two:
+  name: MyString
+  code: MyString
+  kafka_code: MyString
+  type_of_signal: MyString
+  device_kind: two
+  controlled_parameter: two
+  value_kind: two
